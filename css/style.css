@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F6F9;
+}
+
+@font-face {
+    font-family: interSemiBold;
+    src: url('../fonts/inter/Inter_18pt-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: interLight;
+    src: url('../fonts/inter/Inter_18pt-Light.ttf');
+}
+
+
+@font-face {
+    font-family: serifItalic;
+    src: url('../fonts/serifSource/SourceSerif4-Italic.ttf');
+}
+
+@font-face {
+    font-family: serifBoldItalic;
+    src: url("../fonts/serifSource/SourceSerif4-BoldItalic.ttf");
+}
+
+header {
+    margin: 21px 143.25px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.LogoHeader {
+    scale: 0.75;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 7.5px;
+    background-color: black;
+    border-radius: 9.75px;
+}
+
+.linknav {
+    text-decoration: none;
+    color: #F6F6F9 ;
+    font-family: interSemibold;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+
+/* buttons Nav */
+.navButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Entrarnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 7.5px;
+    background-color: #D9D9D9;
+    font-family: interSemibold;
+    font-size: 15px;
+    color: black;
+
+    padding: 8.25px 9.75px;
+    border-radius: 9.75px;
+    text-decoration: none;
+
+}
+.Cadastrarnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 7.5px;
+    background-color: #0177EB;
+    font-family: interSemibold;
+    font-size: 15px;
+    color: #F6F6F9;
+
+    padding: 8.25px 9.75px;
+    border-radius: 9.75px;
+    text-decoration: none;
+}
+
+/* Main */
+/* Página 1 | Div 1 */
+
+.astNTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    
+}
+.asterisco {
+    align-self: flex-start;
+    width: auto;
+    scale: 0.75;
+}
+
+h1 {
+    font-family: interSemibold;
+    font-size: 67.5px;
+    text-align: center;
+    max-width: 654.75px;
+    width: 100%;
+    letter-spacing: -5.4px;
+    line-height: 100%;
+    
+}
+.com {
+    color: #0177EB;
+    font-family: serifItalic;
+}
+
+.subtitle {
+    font-family: interLight;
+    font-size: 27px;
+    color: black;
+    max-width: fit-content;
+    width: 100%;
+    text-align: center;
+    padding-top: 31px;
+
+}
+
+.btnAprender {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+
+    gap: 7.5px;
+    background-color: #0177EB;
+    font-family: interSemibold;
+    color: #F6F6F9;
+
+    border-radius: 25.5px;
+    text-decoration: none;
+    margin-top: 65.25px;
+
+    font-size: 27px;
+    padding: 17.25px;
+
+}
+
+
+
+.titlePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCromado {
+    display: flex;
+    scale: 0.75;
+}
+
+.main {
+        margin: 60px 146px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.firstImpression {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+
+/* Div 2 - main */
+
+.content-copy {
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 200px;
+    height: max-content;
+    gap: 63px;
+}
+
+/* Linhas */
+
+/* Linhas Spans */
+.perde, .lembra-pouco, .organizar, .sente {
+    color: #0177EB;
+}
+
+
+/* Linha 1 */
+
+.lineOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 76px;
+    
+
+}
+
+
+
+.copyOne {
+    font-family: interSemibold;
+    font-size: 36px;
+}
+
+
+/* Linha 2 */
+
+.lineTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+
+}
+
+.lineTwo .copyOne {
+    text-align: end;
+}
+
+/* Linha 3 */
+
+.lineThree {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 183px;
+
+}
+
+/* Linha 4 */
+
+.lineFour{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: start;
+
+    text-align: end;
+    gap: 20px;
+}
+
+
+/* Faixa */
+
+
+.faixa{
+    width: 100%;
+    padding: 41.25px 360px;
+    gap: 7.5px;
+    background-color: #002b56;
+    font-family: interSemibold;
+    font-size: 20px;
+}
+
+.white {
+    color: #F6F6F9;
+
+}
+
+.solution, .textPBlue{
+    color:#0177EB ;
+}
+
+/* Texto */
+
+.textP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0;
+    font-family: interLight;
+    font-size: 20px;
+}
+
+/* Cards */
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+
+}
+
+.blockColumns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 15px;
+
+}
+
+.blockline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    width: 300px;
+
+    text-align: center;
+
+    padding: 20px;
+    border-radius: 20px;
+
+    font-family: interSemibold;
+
+}
+
+/* Sem ou Com NeuroFlow */
+
+.withOut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 30px;
+    font-family: interSemibold;
+    margin: 100px;
+    gap: 200px;
+
+
+}
+
+.semN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 39px;
+
+    color: #9b9b9b;
+
+}
+
+
+.comN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 100px;
+
+    color: #0177EB;
+
+
+}
+
+/* final-copy */
+
+.final-copy {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        background-color: black;
+}
+
+.all-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 135px;
+}
+
+.h2FC {
+
+    font-family: interSemibold;
+    text-align: center;
+    font-size: 48px;
+
+
+}
+
+.h2FC span {
+    color: #0177EB;
+}
+
+.textNsub {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 25.5px;
+    color: #F6F6F9;
+}
+
+.textNsub p {
+    font-size: 27px;
+        font-family: interLight;
+    
+}
+
+.txsubNImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.h2Final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#0177EB;
+    font-family: serifBoldItalic;
+    font-size: 72px;
+    margin:150px;
+
+}
+
+.spanFinal {
+    font-family: interSemibold;
+    color: #F6F6F9;
+}
+
+.spanCom {
+    color: #9b9b9b;
+    font-family: serifItalic;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1d1d1d;
+
+    width: 100%;
+    padding: 50px 400px;
+}
+
+footer button {
+    background-color: transparent;
+    border: none;
+}
+
