@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    background-image: url(../../assets/imgAuth/img_fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 40px;
+}
+
+/* LADO ESQUERDO */
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: -65px;
+    background: linear-gradient(135deg, #ffffff 0%, #cfd8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -2px;
+}
+
+.brand-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 5px;
+}
+
+.logo-svg {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.brand-icon {
+    font-size: 40px;
+}
+
+.brand-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #cfd8ff;
+    letter-spacing: 1px;
+}
+
+/* LADO DIREITO */
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.card {
+    width: 100%;
+    max-width: 480px;
+    padding: 60px 50px;
+    background: rgba(15, 25, 65, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(147, 112, 219, 0.2);
+    border-radius: 25px;
+    box-shadow: 
+        0 8px 32px rgba(31, 38, 135, 0.37),
+        inset 0 0 32px rgba(147, 112, 219, 0.05);
+    animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    padding: 16px 20px;
+    font-size: 14px;
+    border: 2px solid rgba(147, 112, 219, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group input::placeholder {
+    color: rgba(207, 216, 255, 0.5);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: rgba(147, 112, 219, 0.8);
+    background: rgba(147, 112, 219, 0.1);
+    box-shadow: 0 0 20px rgba(147, 112, 219, 0.2);
+}
+
+.btn-submit {
+    padding: 16px 32px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1c6bff 0%, #3a9bff 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 20px rgba(28, 107, 255, 0.3);
+}
+
+.btn-submit a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(28, 107, 255, 0.5);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(207, 216, 255, 0.7);
+}
+
+.login-link a {
+    color: #3a9bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #5badff;
+    text-decoration: underline;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .left-content h1 {
+        font-size: 48px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .left-content h1 {
+        font-size: 36px;
+    }
+
+    .brand-name {
+        font-size: 20px;
+    }
+
+    .card {
+        padding: 40px 30px;
+    }
+
+    .form-group input,
+    .btn-submit {
+        font-size: 14px;
+        padding: 14px 16px;
+    }
+}
